@@ -11,8 +11,10 @@ public class Flight {
 	private String operatingAirlines;
 	private String departureCity;
 	private String arrivalCity;
-	// @Temporal(value = TemporalType.TIMESTAMP)
+	//@Temporal(value = TemporalType.TIMESTAMP)
 	private Date dateOfDeparture;
+	//private Date dateOfDeparture;
+	            
 	private Timestamp estimatedDepartureTime;
 	
 

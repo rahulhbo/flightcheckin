@@ -13,8 +13,8 @@ Airlines : ${reservation.flight.operatingAirlines} <br/>
 Flight Number : ${reservation.flight.flightNumber} <br/>
 Departure City : ${reservation.flight.departureCity} <br/>
 Arrival City : ${reservation.flight.arrivalCity} <br/>
-Date of Departure : ${reservation.flight.dateOfDeparture} <br/>
-Estimated Departure Time : ${reservation.flight.estimateDepartureTime} <br/>
+ Date of Departure : ${reservation.flight.dateofDeparture} <br/>
+Estimated Departure Time : ${reservation.flight.estimatedDepartureTime} <br/>
 
 <h2>Passenger Details:</h2>
 First Name: ${reservation.passenger.firstName} <br/>
@@ -25,7 +25,7 @@ phone: ${reservation.passenger.phone}          <br/>
 <form action="completeCheckIn" method="post">
 
 Enter The Number Of Bags You Want TO CheckIn: <input  type="text" name="numberofBags" />
-<input type="hidden" value="${reservation.id}"/>
+<input type="hidden" value="${reservation.id}" name="reservationId"/>
 <input type="submit" value="check In"/>
 </form>
 </body>
